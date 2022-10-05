@@ -2,7 +2,10 @@
   "name": "generator-botkit",
   "version": "4.8.0",
   "description": "Automatically generate a Botkit application template for any supported platform",
-  "scripts": {},
+  "scripts": {
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
   "files": [
     "generators"
   ],
@@ -23,6 +26,8 @@
     "url": "https://github.com/howdyai/botkit.git"
   },
   "dependencies": {
-    "yeoman-generator": "^3.2.0"
-  }
+    "yeoman-generator": "^5.0.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
