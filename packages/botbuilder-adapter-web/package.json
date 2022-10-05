@@ -12,7 +12,9 @@
   "scripts": {
     "build": "tsc",
     "test": "tsc ; nyc mocha tests/*.tests.js",
-    "eslint": "./node_modules/.bin/eslint --fix src/*"
+    "eslint": "./node_modules/.bin/eslint --fix src/*",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "Microsoft Corp.",
   "license": "MIT",
@@ -36,10 +38,11 @@
   },
   "dependencies": {
     "botkit": "^4.8.0",
-    "botbuilder": "^4.8.0",
+    "botbuilder": "^4.10.5",
     "debug": "^4.1.0",
     "url": "^0.11.0",
-    "ws": "^7.1.1"
+    "ws": "^7.4.6",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -48,5 +51,6 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1"
-  }
+  },
+  "snyk": true
 }
