@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "Documentation for Botkit 4.x",
   "scripts": {
-    "build-docs": "./build/build.sh"
+    "build-docs": "./build/build.sh",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "benbrown@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "handlebars": "^4.7.2",
-    "typedoc": "^0.16.9",
-    "typedoc-plugin-external-module-name": "^2.0.0"
-  }
+    "handlebars": "^4.7.7",
+    "typedoc": "^0.21.10",
+    "typedoc-plugin-external-module-name": "^2.0.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
