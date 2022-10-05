@@ -1,0 +1,26 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - webex > lodash:
+        patched: '2022-10-05T17:40:38.799Z'
+    - webex > @webex/plugin-rooms > lodash:
+        patched: '2022-10-05T17:40:38.799Z'
+    - webex > @webex/plugin-device-manager > @webex/internal-plugin-search > lodash:
+        patched: '2022-10-05T17:40:38.799Z'
+    - webex > @webex/webex-core > ampersand-events > lodash:
+        patched: '2022-10-05T17:40:38.799Z'
+    - webex > @webex/webex-core > ampersand-collection > lodash:
+        patched: '2022-10-05T17:40:38.799Z'
+    - webex > @webex/webex-core > ampersand-state > lodash:
+        patched: '2022-10-05T17:40:38.799Z'
+    - botbuilder > botframework-connector > adal-node > async > lodash:
+        patched: '2022-10-05T17:40:38.799Z'
+    - botkit > botframework-connector > adal-node > async > lodash:
+        patched: '2022-10-05T17:40:38.799Z'
+    - webex > @webex/internal-plugin-calendar > @webex/internal-plugin-conversation > @webex/internal-plugin-user > lodash:
+        patched: '2022-10-05T17:40:38.799Z'
+    - webex > @webex/webex-core > ampersand-collection > ampersand-class-extend > lodash:
+        patched: '2022-10-05T17:40:38.799Z'
