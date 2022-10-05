@@ -1,0 +1,10 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - botframework-connector > adal-node > async > lodash:
+        patched: '2022-10-05T20:07:52.800Z'
+    - botbuilder > botframework-connector > adal-node > async > lodash:
+        patched: '2022-10-05T20:07:52.800Z'
