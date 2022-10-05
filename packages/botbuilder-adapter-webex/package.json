@@ -11,7 +11,9 @@
   "scripts": {
     "build": "tsc",
     "test": "tsc ; nyc mocha tests/*.tests.js",
-    "eslint": "./node_modules/.bin/eslint --fix src/*"
+    "eslint": "./node_modules/.bin/eslint --fix src/*",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "Microsoft Corp.",
   "license": "MIT",
@@ -37,7 +39,8 @@
     "botkit": "^4.8.0",
     "debug": "^4.1.0",
     "url": "^0.11.0",
-    "webex": "^1.80.148"
+    "webex": "^1.80.148",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -46,5 +49,6 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1"
-  }
+  },
+  "snyk": true
 }
