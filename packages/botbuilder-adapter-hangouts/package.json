@@ -11,7 +11,9 @@
   "scripts": {
     "build": "tsc",
     "test": "tsc ; nyc mocha tests/*.tests.js",
-    "eslint": "./node_modules/.bin/eslint --fix src/*"
+    "eslint": "./node_modules/.bin/eslint --fix src/*",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "Microsoft Corp.",
   "license": "MIT",
@@ -34,10 +36,11 @@
     "url": "https://github.com/howdyai/botkit.git"
   },
   "dependencies": {
-    "botbuilder": "^4.8.0",
-    "googleapis": "^34.0.0",
+    "botbuilder": "^4.10.5",
+    "googleapis": "^49.0.0",
     "botkit": "^4.8.0",
-    "debug": "^4.1.0"
+    "debug": "^4.1.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -46,5 +49,6 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1"
-  }
+  },
+  "snyk": true
 }
