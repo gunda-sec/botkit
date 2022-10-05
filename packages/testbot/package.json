@@ -4,7 +4,9 @@
   "description": "a test harness for testing in-progress changes to botkit",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node bot.js",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "benbrown@gmail.com",
   "license": "MIT",
@@ -24,6 +26,8 @@
     "botkit-plugin-cms": "^1.0.3",
     "dotenv": "^6.2.0",
     "express-basic-auth": "^1.1.6",
-    "restify": "^8.4.0"
-  }
+    "restify": "^8.4.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
