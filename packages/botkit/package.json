@@ -31,12 +31,12 @@
     "url": "https://github.com/howdyai/botkit.git"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.19.2",
     "botbuilder": "^4.8.0",
     "botbuilder-dialogs": "^4.8.0",
     "botframework-connector": "^4.8.0",
     "debug": "^4.1.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mustache": "^4.0.1",
     "path": "^0.12.7",
     "request": "^2.88.0",
