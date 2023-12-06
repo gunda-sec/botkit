@@ -39,7 +39,7 @@
   "dependencies": {
     "botbuilder": "^4.8.0",
     "botkit": "^4.8.0",
-    "debug": "^4.1.0",
+    "debug": "^4.3.1",
     "twilio": "^3.29.2"
   },
   "devDependencies": {
