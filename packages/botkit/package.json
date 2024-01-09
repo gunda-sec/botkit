@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
-    "botbuilder": "^4.8.0",
+    "botbuilder": "^4.21.4",
     "botbuilder-dialogs": "^4.8.0",
     "botframework-connector": "^4.8.0",
     "debug": "^4.1.0",
