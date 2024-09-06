@@ -23,6 +23,6 @@
     "url": "https://github.com/howdyai/botkit.git"
   },
   "dependencies": {
-    "yeoman-generator": "^3.2.0"
+    "yeoman-generator": "^7.1.1"
   }
 }
